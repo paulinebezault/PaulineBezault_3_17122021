@@ -1,3 +1,10 @@
-body{
-    font-family: Arial;
-}
+/* logo et titres: {font-family: 'Shrikhand', cursive;}
+texte: {font-family: 'Roboto', sans-serif;}
+
+couleurs: primaire: #9356DC
+        secondaire: #FF79DA
+        tertiaire: #99E2D0 */
+
+        h1{
+            display: hidden;
+        }
