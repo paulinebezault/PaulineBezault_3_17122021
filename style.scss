@@ -9,21 +9,77 @@ $primary: #9356DC;
 $secondary:#FF79DC;
 $tertiary:#99E2D0;
 
-h2{color: $primary;}
+@mixin titres__id-graph {
+        font-family: 'Shrikhand', cursive;
+        font-weight: normal;
+        font-size: medium;
+}
 
-.chips{ 
+body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        max-width:auto;
+justify-content: center;
+}
+
+header{
+        margin: auto;
+        h1{
+        @include titres__id-graph;
+        
+        }
+        img{
+                height:30px;
+                width: 150px;
+        }
+}
+
+h2 {
+        color: black;
+}
+
+a{
+        text-decoration: none;
+        color: black;
+}
+
+.explorer{
+        width:100%;
+        text-align: center;  
+        background-color:#f6f6f6;
+        height:300px;
+        p:first-child{
+                background-color:#eaeaea;
+                height: 40px;
+                padding: 20px 0 0 0;
+                margin:0;
+                font-weight: bold;
+                border-top: solid 3px grey;
+        }
+        i{
+                margin: 0 20px 0 0;
+        }
+}
+
+.chips {
         display: flex;
         align-items: center;
         background-color: lightgrey;
         border-radius: 20px;
         margin-left: 20px;
-        position:relative;
-        
-        &:hover{
-                background-color:$secondary;
+        position: relative;
+        justify-content: flex-start;
+        margin-bottom: 5px;
+
+        &:hover {
+                background-color: $secondary;
         }
-        p:first-child{
-                background-color:$primary;
+
+        p:first-child {
+                background-color: $primary;
                 width: 20px;
                 height: 20px;
                 padding: 5px;
@@ -33,9 +89,17 @@ h2{color: $primary;}
                 position: absolute;
                 left: -10px;
         }
+
+        i {
+                align-items: center;
+                color: grey;
+                margin: auto 30px;
+
+        }
+
 }
 
-button{
+button {
         background: linear-gradient($secondary, $primary);
         font-size: 18px;
         font-weight: bold;
@@ -44,11 +108,83 @@ button{
         border-radius: 40px;
         border: none;
         box-shadow: 1px 5px 5px lightgrey;
-        
-        &:hover{
-                background: linear-gradient(lighten($secondary,5%), lighten($primary,5%));
+
+        &:hover {
+                background: linear-gradient(lighten($secondary, 5%), lighten($primary, 5%));
                 box-shadow: 1px 5px 5px grey;
         }
 
 }
 
+.restaurants {
+        background-color: #f6f6f6;
+ width: 100%;
+ margin: 40px auto ;
+ padding: 0 0 40px 0;
+
+ h2{
+         width:80%;
+         margin:auto;
+         padding:50px 0 25px 0;
+ }
+
+}
+
+.carte-restaurant {
+        width:80%;
+margin: 25px auto; 
+        position: relative;
+        background-color: white;
+        border-radius: 20px;
+
+        .carte-image {
+                width: 100%;
+                object-fit: cover;
+
+                img {
+                        height: 200px;
+                        border-radius:  20px  20px 0 0 ;
+                }
+        }
+
+        .encart-nouveau {
+                position: absolute;
+                top: 0;
+                right: 10px;
+                background-color: $tertiary;
+                padding: 7px 10px;
+                border-radius: 3px;
+                font-weight: bold;
+                color:#008766;
+        }
+
+        .carte-body {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        }
+}
+
+
+footer {
+        background-color: #535353;
+        color: white;
+        position: relative;
+        bottom: 0;
+        padding-left:30px;
+        h1{
+                @include titres__id-graph;
+               }
+        nav {
+                
+                i {
+                        margin-right: 10px;
+                        
+                }
+               
+        }
+        
+        a{
+                color: white;
+        }
+}
