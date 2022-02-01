@@ -9,6 +9,10 @@ $primary: #9356DC;
 $secondary:#FF79DC;
 $tertiary:#99E2D0;
 
+$grey: #eaeaea;
+$lightgrey:#f6f6f6;
+$lightpurple:#f5edff;
+
 @mixin titres__id-graph {
         font-family: 'Shrikhand', cursive;
         font-weight: normal;
@@ -21,18 +25,23 @@ body {
         margin: 0;
         background-color: white;
         font-family: 'Roboto', sans-serif;
-        max-width:auto;
-justify-content: center;
+        max-width: auto;
+        justify-content: center;
+
 }
 
-header{
+header {
         margin: auto;
-        h1{
-        @include titres__id-graph;
-        
+        padding-top: 15px;
+
+
+        h1 {
+                @include titres__id-graph;
+
         }
-        img{
-                height:30px;
+
+        img {
+                height: 30px;
                 width: 150px;
         }
 }
@@ -41,41 +50,103 @@ h2 {
         color: black;
 }
 
-a{
+a {
         text-decoration: none;
         color: black;
 }
 
-.explorer{
-        width:100%;
-        text-align: center;  
-        background-color:#f6f6f6;
-        height:300px;
-        p:first-child{
-                background-color:#eaeaea;
-                height: 40px;
+.explorer {
+        width: 100%;
+        text-align: center;
+        background-color: #f6f6f6;
+        min-height: 300px;
+        padding-bottom: 20px;
+
+        .location {
+                background-color: #eaeaea;
+                min-height: 40px;
                 padding: 20px 0 0 0;
-                margin:0;
+                margin: 0;
                 font-weight: bold;
-                border-top: solid 3px grey;
+                box-shadow: inset 0px 8px 6px -6px #cfcfcf;
+                flex: 20%;
         }
-        i{
+
+        i {
                 margin: 0 20px 0 0;
+
+        }
+
+        div {
+                flex: 80%;
+                padding: 25px 25px 35px 25px;
+        }
+
+        h2 {
+                font-size: 1.5em;
+                padding: 0 25px;
+        }
+
+        p:nth-child(2) {
+                font-size: 1.1em;
+                padding: 0 15px 25px 10px;
+                margin: auto;
+                color: grey;
+        }
+
+}
+
+button {
+        background: linear-gradient($secondary, $primary);
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        padding: 20px;
+        border-radius: 40px;
+        border: none;
+        box-shadow: 1px 5px 5px lightgrey;
+        margin: auto;
+
+        &:hover {
+                background: linear-gradient(lighten($secondary, 5%), lighten($primary, 5%));
+                box-shadow: 1px 5px 5px grey;
+        }
+
+}
+
+.fonctionnement {
+        width: 95%;
+        margin: auto;
+        min-height: 300px;
+        padding-bottom: 30px;
+
+        h2 {
+                padding: 20px;
         }
 }
+
+
 
 .chips {
         display: flex;
         align-items: center;
-        background-color: lightgrey;
+        background-color: #f6f6f6;
         border-radius: 20px;
-        margin-left: 20px;
+        margin: 15px 20px;
         position: relative;
         justify-content: flex-start;
-        margin-bottom: 5px;
+
+        padding: 10px;
+        box-shadow: 0 5px 10px lightgrey;
+        font-weight: bold;
 
         &:hover {
-                background-color: $secondary;
+                background-color: #f5edff;
+                box-shadow: 5px 5px 10px grey;
+
+                i {
+                        color: $primary;
+                }
         }
 
         p:first-child {
@@ -94,56 +165,43 @@ a{
                 align-items: center;
                 color: grey;
                 margin: auto 30px;
+                width: 15px;
+                }
 
+        p:nth-child(3) {
+                overflow: hidden;
         }
-
-}
-
-button {
-        background: linear-gradient($secondary, $primary);
-        font-size: 18px;
-        font-weight: bold;
-        color: white;
-        padding: 20px;
-        border-radius: 40px;
-        border: none;
-        box-shadow: 1px 5px 5px lightgrey;
-
-        &:hover {
-                background: linear-gradient(lighten($secondary, 5%), lighten($primary, 5%));
-                box-shadow: 1px 5px 5px grey;
-        }
-
 }
 
 .restaurants {
         background-color: #f6f6f6;
- width: 100%;
- margin: 40px auto ;
- padding: 0 0 40px 0;
+        width: 100%;
+        margin: 40px auto 0 auto;
+        padding: 0 0 40px 0;
 
- h2{
-         width:80%;
-         margin:auto;
-         padding:50px 0 25px 0;
- }
+        h2 {
+                width: 80%;
+                margin: auto;
+                padding: 50px 0 25px 0;
+        }
 
 }
 
 .carte-restaurant {
-        width:80%;
-margin: 25px auto; 
+        width: 85%;
+        margin: 25px auto;
         position: relative;
         background-color: white;
         border-radius: 20px;
-
+        box-shadow: 0 3px 10px rgb(202, 202, 202);
+ overflow:hidden;
         .carte-image {
                 width: 100%;
                 object-fit: cover;
 
                 img {
                         height: 200px;
-                        border-radius:  20px  20px 0 0 ;
+                        border-radius: 20px 20px 0 0;
                 }
         }
 
@@ -155,14 +213,22 @@ margin: 25px auto;
                 padding: 7px 10px;
                 border-radius: 3px;
                 font-weight: bold;
-                color:#008766;
+                color: #008766;
         }
 
         .carte-body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                padding: 10px 20px 20px 20px;
+
+                h3,
+                p {
+                        margin: 0;
+                       
+                }
         }
+
 }
 
 
@@ -171,20 +237,23 @@ footer {
         color: white;
         position: relative;
         bottom: 0;
-        padding-left:30px;
-        h1{
+        padding-left: 30px;
+
+        h1 {
                 @include titres__id-graph;
-               }
+        }
+
         nav {
-                
+
                 i {
                         margin-right: 10px;
-                        
+                        width:15px;
+
                 }
-               
+
         }
-        
-        a{
+
+        a {
                 color: white;
         }
 }

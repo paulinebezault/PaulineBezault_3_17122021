@@ -23,6 +23,7 @@ body {
 
 header {
   margin: auto;
+  padding-top: 15px;
 }
 
 header h1 {
@@ -49,20 +50,76 @@ a {
   width: 100%;
   text-align: center;
   background-color: #f6f6f6;
-  height: 300px;
+  min-height: 300px;
+  padding-bottom: 20px;
 }
 
-.explorer p:first-child {
+.explorer .location {
   background-color: #eaeaea;
-  height: 40px;
+  min-height: 40px;
   padding: 20px 0 0 0;
   margin: 0;
   font-weight: bold;
-  border-top: solid 3px grey;
+  -webkit-box-shadow: inset 0px 8px 6px -6px #cfcfcf;
+          box-shadow: inset 0px 8px 6px -6px #cfcfcf;
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
 }
 
 .explorer i {
   margin: 0 20px 0 0;
+}
+
+.explorer div {
+  -webkit-box-flex: 80%;
+      -ms-flex: 80%;
+          flex: 80%;
+  padding: 25px 25px 35px 25px;
+}
+
+.explorer h2 {
+  font-size: 1.5em;
+  padding: 0 25px;
+}
+
+.explorer p:nth-child(2) {
+  font-size: 1.1em;
+  padding: 0 15px 25px 10px;
+  margin: auto;
+  color: grey;
+}
+
+button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DC), to(#9356DC));
+  background: linear-gradient(#FF79DC, #9356DC);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  border-radius: 40px;
+  border: none;
+  -webkit-box-shadow: 1px 5px 5px lightgrey;
+          box-shadow: 1px 5px 5px lightgrey;
+  margin: auto;
+}
+
+button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff93e3), to(#a16be0));
+  background: linear-gradient(#ff93e3, #a16be0);
+  -webkit-box-shadow: 1px 5px 5px grey;
+          box-shadow: 1px 5px 5px grey;
+}
+
+.fonctionnement {
+  width: 95%;
+  margin: auto;
+  min-height: 300px;
+  padding-bottom: 30px;
+}
+
+.fonctionnement h2 {
+  padding: 20px;
 }
 
 .chips {
@@ -72,18 +129,27 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: lightgrey;
+  background-color: #f6f6f6;
   border-radius: 20px;
-  margin-left: 20px;
+  margin: 15px 20px;
   position: relative;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 5px;
+  padding: 10px;
+  -webkit-box-shadow: 0 5px 10px lightgrey;
+          box-shadow: 0 5px 10px lightgrey;
+  font-weight: bold;
 }
 
 .chips:hover {
-  background-color: #FF79DC;
+  background-color: #f5edff;
+  -webkit-box-shadow: 5px 5px 10px grey;
+          box-shadow: 5px 5px 10px grey;
+}
+
+.chips:hover i {
+  color: #9356DC;
 }
 
 .chips p:first-child {
@@ -104,32 +170,17 @@ a {
           align-items: center;
   color: grey;
   margin: auto 30px;
+  width: 15px;
 }
 
-button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DC), to(#9356DC));
-  background: linear-gradient(#FF79DC, #9356DC);
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  padding: 20px;
-  border-radius: 40px;
-  border: none;
-  -webkit-box-shadow: 1px 5px 5px lightgrey;
-          box-shadow: 1px 5px 5px lightgrey;
-}
-
-button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff93e3), to(#a16be0));
-  background: linear-gradient(#ff93e3, #a16be0);
-  -webkit-box-shadow: 1px 5px 5px grey;
-          box-shadow: 1px 5px 5px grey;
+.chips p:nth-child(3) {
+  overflow: hidden;
 }
 
 .restaurants {
   background-color: #f6f6f6;
   width: 100%;
-  margin: 40px auto;
+  margin: 40px auto 0 auto;
   padding: 0 0 40px 0;
 }
 
@@ -140,11 +191,14 @@ button:hover {
 }
 
 .carte-restaurant {
-  width: 80%;
+  width: 85%;
   margin: 25px auto;
   position: relative;
   background-color: white;
   border-radius: 20px;
+  -webkit-box-shadow: 0 3px 10px #cacaca;
+          box-shadow: 0 3px 10px #cacaca;
+  overflow: hidden;
 }
 
 .carte-restaurant .carte-image {
@@ -155,7 +209,7 @@ button:hover {
 
 .carte-restaurant .carte-image img {
   height: 200px;
-  border-radius: 20px  20px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .carte-restaurant .encart-nouveau {
@@ -179,6 +233,12 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 20px 20px 20px;
+}
+
+.carte-restaurant .carte-body h3,
+.carte-restaurant .carte-body p {
+  margin: 0;
 }
 
 footer {
@@ -197,6 +257,7 @@ footer h1 {
 
 footer nav i {
   margin-right: 10px;
+  width: 15px;
 }
 
 footer a {
