@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,MAAM,CAAC;EACH,MAAM,EAAE,IAAI;EACZ,WAAW,EAAE,IAAI;CAiBpB;;AAnBD,AAQI,MARE,CAQF,EAAE,CAAC;EACK,WAAW,EAAE,oBAAoB;EACzC,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,MAAM;CAEhB;;AAbL,AAeI,MAfE,CAeF,GAAG,CAAC;EACI,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;CACnB",
+    "sources": [
+        "header-restaurant.scss"
+    ],
+    "names": [],
+    "file": "header-restaurant.css"
+}

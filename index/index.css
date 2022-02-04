@@ -185,14 +185,14 @@ button:hover {
 }
 
 .restaurants h2 {
-  width: 80%;
+  width: 85%;
   margin: auto;
   padding: 50px 0 25px 0;
 }
 
 .carte-restaurant {
   width: 85%;
-  margin: 25px auto;
+  margin: 0 auto 25px auto;
   position: relative;
   background-color: white;
   border-radius: 20px;
@@ -233,12 +233,13 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px 18px 15px;
 }
 
 .carte-restaurant .carte-body h3,
 .carte-restaurant .carte-body p {
   margin: 0;
+  padding: 2px 0 0 0;
 }
 
 footer {

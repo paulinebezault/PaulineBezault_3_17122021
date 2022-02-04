@@ -1,0 +1,44 @@
+button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DC), to(#9356DC));
+  background: linear-gradient(#FF79DC, #9356DC);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  border-radius: 40px;
+  border: none;
+  -webkit-box-shadow: 1px 5px 5px lightgrey;
+          box-shadow: 1px 5px 5px lightgrey;
+  margin: auto;
+}
+
+button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff93e3), to(#a16be0));
+  background: linear-gradient(#ff93e3, #a16be0);
+  -webkit-box-shadow: 1px 5px 5px grey;
+          box-shadow: 1px 5px 5px grey;
+}
+
+footer {
+  background-color: #535353;
+  color: white;
+  position: relative;
+  bottom: 0;
+  padding-left: 30px;
+}
+
+footer h1 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: normal;
+  font-size: medium;
+}
+
+footer nav i {
+  margin-right: 10px;
+  width: 15px;
+}
+
+footer a {
+  color: white;
+}
+/*# sourceMappingURL=commons.css.map */

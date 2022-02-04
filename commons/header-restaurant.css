@@ -1,0 +1,16 @@
+header {
+  margin: auto;
+  padding-top: 15px;
+}
+
+header h1 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: normal;
+  font-size: medium;
+}
+
+header img {
+  height: 30px;
+  width: 150px;
+}
+/*# sourceMappingURL=header-restaurant.css.map */
