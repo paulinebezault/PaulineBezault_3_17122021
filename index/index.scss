@@ -4,7 +4,7 @@ texte: {font-family: 'Roboto', sans-serif;}
 couleurs: primaire: #9356DC
         secondaire: #FF79DA
         tertiaire: #99E2D0 */
-
+@import url(../commons/commons.scss);
 $primary: #9356DC;
 $secondary:#FF79DC;
 $tertiary:#99E2D0;
@@ -13,11 +13,6 @@ $grey: #eaeaea;
 $lightgrey:#f6f6f6;
 $lightpurple:#f5edff;
 
-@mixin titres__id-graph {
-        font-family: 'Shrikhand', cursive;
-        font-weight: normal;
-        font-size: medium;
-}
 
 body {
         display: flex;
@@ -92,24 +87,6 @@ a {
                 padding: 0 15px 25px 10px;
                 margin: auto;
                 color: grey;
-        }
-
-}
-
-button {
-        background: linear-gradient($secondary, $primary);
-        font-size: 18px;
-        font-weight: bold;
-        color: white;
-        padding: 20px;
-        border-radius: 40px;
-        border: none;
-        box-shadow: 1px 5px 5px lightgrey;
-        margin: auto;
-
-        &:hover {
-                background: linear-gradient(lighten($secondary, 5%), lighten($primary, 5%));
-                box-shadow: 1px 5px 5px grey;
         }
 
 }
@@ -230,31 +207,4 @@ button {
                 }
         }
 
-}
-
-
-footer {
-        background-color: #535353;
-        color: white;
-        position: relative;
-        bottom: 0;
-        padding-left: 30px;
-
-        h1 {
-                @include titres__id-graph;
-        }
-
-        nav {
-
-                i {
-                        margin-right: 10px;
-                        width:15px;
-
-                }
-
-        }
-
-        a {
-                color: white;
-        }
 }
