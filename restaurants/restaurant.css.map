@@ -1,6 +1,10 @@
 {
     "version": 3,
+<<<<<<< HEAD
     "mappings": "AAAA,OAAO,CAAC,2BAAI;AACZ,OAAO,CAAC,qCAAI;AACZ,OAAO,CAAC,4BAAI;AACZ,OAAO,CAAC,sCAAI",
+=======
+    "mappings": "",
+>>>>>>> master
     "sources": [
         "restaurant.scss"
     ],
