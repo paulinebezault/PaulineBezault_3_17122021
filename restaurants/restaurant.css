@@ -1,9 +1,36 @@
-<<<<<<< HEAD
 @import url(../commons/commons.css);
 @import url(../commons/header-restaurant.css);
 @import url(../commons/commons.scss);
 @import url(../commons/header-restaurant.scss);
+.image-top {
+  position: relative;
+  height: 250px;
+  width: 100%;
+}
+
+.image-top img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.box_menu {
+  position: relative;
+  background-color: transparent;
+  bottom: 25px;
+}
+
+.box_menu h1 {
+  margin: 0;
+  padding: 30px 15px 0 15px;
+  background-color: grey;
+  border-radius: 25px 25px 0 0;
+}
+
+.box_menu article {
+  background-color: lightgrey;
+  margin: 0;
+  padding: 20px;
+}
 /*# sourceMappingURL=restaurant.css.map */
-=======
-/* No CSS *//*# sourceMappingURL=restaurant.css.map */
->>>>>>> master

@@ -2,3 +2,35 @@
 @import url(../commons/header-restaurant.css);
 @import url(../commons/commons.scss);
 @import url(../commons/header-restaurant.scss);
+
+
+
+.image-top{
+    position:relative;
+    height:250px;
+    width:100%;
+    img{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+    }
+}
+
+.box_menu{
+    position:relative; 
+    background-color: transparent;
+    bottom:25px;
+    
+    h1{
+     margin:0;
+     padding:30px 15px 0 15px;
+     background-color: grey;
+     border-radius: 25px 25px 0 0 ;
+    }
+    article{
+        background-color:lightgrey;
+        margin:0;
+        padding:20px;
+    }
+
+}

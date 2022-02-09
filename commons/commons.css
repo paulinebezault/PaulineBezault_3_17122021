@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,7 +14,7 @@ body {
   margin: 0;
   background-color: white;
   font-family: 'Roboto', sans-serif;
-  max-width: auto;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -36,18 +41,18 @@ button:hover {
           box-shadow: 1px 5px 5px grey;
 }
 
+h1 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: normal;
+  font-size: medium;
+}
+
 footer {
   background-color: #535353;
   color: white;
   position: relative;
   bottom: 0;
   padding-left: 30px;
-}
-
-footer h1 {
-  font-family: 'Shrikhand', cursive;
-  font-weight: normal;
-  font-size: medium;
 }
 
 footer nav i {

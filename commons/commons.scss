@@ -6,15 +6,18 @@ $tertiary:#99E2D0;
     font-weight: normal;
     font-size: medium;
 }
-
+*{
+    box-sizing:border-box;
+}
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
     background-color: white;
     font-family: 'Roboto', sans-serif;
-    max-width: auto;
+    width: 100%;
     justify-content: center;
+    
 }
 
 button {
@@ -32,16 +35,16 @@ button {
         box-shadow: 1px 5px 5px grey;
     }
 }
-
+h1 {
+    @include titres__id-graph
+}
 footer {
     background-color: #535353;
     color: white;
     position: relative;
     bottom: 0;
     padding-left: 30px;
-    h1 {
-        @include titres__id-graph
-    }
+
     nav {
         i {
             margin-right: 10px;
