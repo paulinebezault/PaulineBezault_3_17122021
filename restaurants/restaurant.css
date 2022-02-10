@@ -2,6 +2,10 @@
 @import url(../commons/header-restaurant.css);
 @import url(../commons/commons.scss);
 @import url(../commons/header-restaurant.scss);
+main {
+  background-color: #f6f6f6;
+}
+
 .image-top {
   position: relative;
   height: 250px;
@@ -18,19 +22,64 @@
 .box_menu {
   position: relative;
   background-color: transparent;
-  bottom: 25px;
+  bottom: 35px;
 }
 
-.box_menu h1 {
+.box_menu .restaurant-titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   margin: 0;
-  padding: 30px 15px 0 15px;
-  background-color: grey;
-  border-radius: 25px 25px 0 0;
+  padding: 30px 30px 0px 20px;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.box_menu .restaurant-titre h1 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.box_menu .restaurant-titre i {
+  font-size: 1.5em;
 }
 
 .box_menu article {
-  background-color: lightgrey;
+  background-color: #f6f6f6;
   margin: 0;
   padding: 20px;
+}
+
+h2 {
+  font-size: medium;
+  font-weight: normal;
+  border-bottom: 3px solid #99E2D0;
+}
+
+.carte_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  margin: 15px 20px;
+  position: relative;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px;
+  -webkit-box-shadow: 0 5px 10px lightgrey;
+          box-shadow: 0 5px 10px lightgrey;
+  font-weight: bold;
 }
 /*# sourceMappingURL=restaurant.css.map */

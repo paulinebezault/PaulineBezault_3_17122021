@@ -1,16 +1,33 @@
 header {
-  margin: auto;
   padding-top: 15px;
-  /*i {}*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header h1 {
+header a {
+  color: black;
+}
+
+header .back-button {
+  padding: 0 80px 5px 30px;
+}
+
+header p {
   font-family: 'Shrikhand', cursive;
   font-weight: normal;
   font-size: medium;
+  margin: 0;
 }
 
-header img {
+header p img {
   height: 30px;
   width: 150px;
 }

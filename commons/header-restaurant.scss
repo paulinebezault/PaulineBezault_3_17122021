@@ -1,14 +1,25 @@
 header {
-    margin: auto;
-    padding-top: 15px;
-    /*i {}*/
-    h1 {
+
+padding-top:15px ;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    
+    a {
+color:black;
+    }
+.back-button{
+    padding:0 80px 5px 30px;
+}
+    p {
         font-family: 'Shrikhand', cursive;
         font-weight: normal;
         font-size: medium;
-    }
-    img {
+        margin:0;
+        img {
         height: 30px;
         width: 150px;
+        }
     }
+    
 }
