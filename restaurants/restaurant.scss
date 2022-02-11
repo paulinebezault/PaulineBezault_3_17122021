@@ -53,6 +53,7 @@ main{
         background-color: #f6f6f6;
         margin: 0;
         padding: 20px;
+        width:100%;
     }
 
 }
@@ -62,16 +63,41 @@ font-weight:normal;
     border-bottom: 3px solid #99E2D0;
 }
 
+.menu_part{
+    padding-bottom:30px;
+}
 .carte_menu{
     display: flex;
     align-items: center;
     background-color: white;
-    border-radius: 20px;
-    margin: 15px 20px;
+    border-radius: 15px;
+    margin:15px 0;
     position: relative;
-    justify-content: flex-start;
-
-    padding: 10px;
+    padding: 5px 10px;
     box-shadow: 0 5px 10px lightgrey;
     font-weight: bold;
+    justify-content: space-between;
+    width:100%;
+    .carte_menu-texte{
+        flex-direction:column;
+        padding:5px;
+        p{
+            font-weight:normal;
+        }
+    }
+    h3, p{
+        margin:0;
+    }
+    .prix{
+        padding:5px;
+    }
+}
+
+button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:30px;
+    padding-left:50px;
+    padding-right:50px; 
 }

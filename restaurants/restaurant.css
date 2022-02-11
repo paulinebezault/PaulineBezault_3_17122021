@@ -55,12 +55,17 @@ main {
   background-color: #f6f6f6;
   margin: 0;
   padding: 20px;
+  width: 100%;
 }
 
 h2 {
   font-size: medium;
   font-weight: normal;
   border-bottom: 3px solid #99E2D0;
+}
+
+.menu_part {
+  padding-bottom: 30px;
 }
 
 .carte_menu {
@@ -71,15 +76,51 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  border-radius: 20px;
-  margin: 15px 20px;
+  border-radius: 15px;
+  margin: 15px 0;
   position: relative;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 10px;
+  padding: 5px 10px;
   -webkit-box-shadow: 0 5px 10px lightgrey;
           box-shadow: 0 5px 10px lightgrey;
   font-weight: bold;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.carte_menu .carte_menu-texte {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+}
+
+.carte_menu .carte_menu-texte p {
+  font-weight: normal;
+}
+
+.carte_menu h3, .carte_menu p {
+  margin: 0;
+}
+
+.carte_menu .prix {
+  padding: 5px;
+}
+
+button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 /*# sourceMappingURL=restaurant.css.map */
