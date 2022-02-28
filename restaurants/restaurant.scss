@@ -5,15 +5,15 @@
 
 
 
-main{
-     background-color:#f6f6f6;
+main {
+    background-color: #f6f6f6;
 }
 
 .image-top {
     position: relative;
     height: 250px;
     width: 100%;
-   
+
 
     img {
         height: 100%;
@@ -31,7 +31,6 @@ main{
     .restaurant-titre {
         display: flex;
         width: 100%;
-
         margin: 0;
         padding: 30px 30px 0px 20px;
         background-color: #f6f6f6;
@@ -53,51 +52,145 @@ main{
         background-color: #f6f6f6;
         margin: 0;
         padding: 20px;
-        width:100%;
+        width: 100%;
     }
 
 }
-h2{
-    font-size:medium;
-font-weight:normal;
-    border-bottom: 3px solid #99E2D0;
+
+h2 {
+    font-size: medium;
+    font-weight: normal;
+    margin-bottom:5px;
+    
+}
+.sub-line{
+    display:block;
+    height:3px;
+width:40px;
+background-color:#99E2D0}
+
+.menu_part {
+    padding-bottom: 30px;
 }
 
-.menu_part{
-    padding-bottom:30px;
-}
-.carte_menu{
+
+.carte_menu {
     display: flex;
+    opacity: 0;
     align-items: center;
     background-color: white;
     border-radius: 15px;
-    margin:15px 0;
+    margin: 15px 0;
     position: relative;
-    padding: 5px 10px;
+
     box-shadow: 0 5px 10px lightgrey;
     font-weight: bold;
     justify-content: space-between;
-    width:100%;
-    .carte_menu-texte{
-        flex-direction:column;
-        padding:5px;
-        p{
-            font-weight:normal;
+    width: 100%;
+    .carte_menu-texte, .prix{
+        padding: 10px 20px;
+    }
+    &:hover {
+        .carte_menu-texte {
+            width: 60%;
+        }
+
+        .checkbox {
+            display:block;
+            animation: slideleft 0.3s ease-out;
+            animation-fill-mode: forwards;
+            .fa-check-circle{
+                animation: rotate 1.5s ease;
+                animation-fill-mode: forwards;
+            }
         }
     }
-    h3, p{
-        margin:0;
+
+    .carte_menu-texte {
+        flex-direction: column;
+        width: 80%;
+
+        p {
+            font-weight: normal;
+        }
+        h3, p{
+            overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        }
     }
-    .prix{
-        padding:5px;
+
+    h3,
+    p {
+        margin: 0;    
+    }
+
+    .checkbox {
+        display: none;
+        width: 0%;
+        height: 100%;
+        background-color: #99E2D0;
+        padding: 21px 25px;
+        border-radius: 0 15px 15px 0;
+        i {
+         font-size:20px;
+        color:white;
+        }
     }
 }
 
-button{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin-top:30px;
-    padding-left:50px;
-    padding-right:50px; 
+@for $i from 1 through 9 {
+    .carte_menu:nth-child(1n+#{$i}) {
+        animation: fadein ($i*0.5s) ease-out;
+        animation-fill-mode: forwards;
+    }
+
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        transform: translateY(20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideleft {
+    0% {
+        width: 0%;
+        display: none;
+    }
+
+    1% {
+        display:block;
+    }
+
+    100% {
+        width:20%;
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
 }

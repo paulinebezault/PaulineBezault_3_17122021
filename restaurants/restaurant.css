@@ -61,7 +61,14 @@ main {
 h2 {
   font-size: medium;
   font-weight: normal;
-  border-bottom: 3px solid #99E2D0;
+  margin-bottom: 5px;
+}
+
+.sub-line {
+  display: block;
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
 }
 
 .menu_part {
@@ -72,6 +79,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -79,7 +87,6 @@ h2 {
   border-radius: 15px;
   margin: 15px 0;
   position: relative;
-  padding: 5px 10px;
   -webkit-box-shadow: 0 5px 10px lightgrey;
           box-shadow: 0 5px 10px lightgrey;
   font-weight: bold;
@@ -89,24 +96,205 @@ h2 {
   width: 100%;
 }
 
+.carte_menu .carte_menu-texte, .carte_menu .prix {
+  padding: 10px 20px;
+}
+
+.carte_menu:hover .carte_menu-texte {
+  width: 60%;
+}
+
+.carte_menu:hover .checkbox {
+  display: block;
+  -webkit-animation: slideleft 0.3s ease-out;
+          animation: slideleft 0.3s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.carte_menu:hover .checkbox .fa-check-circle {
+  -webkit-animation: rotate 1.5s ease;
+          animation: rotate 1.5s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .carte_menu .carte_menu-texte {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5px;
+  width: 80%;
 }
 
 .carte_menu .carte_menu-texte p {
   font-weight: normal;
 }
 
-.carte_menu h3, .carte_menu p {
+.carte_menu .carte_menu-texte h3, .carte_menu .carte_menu-texte p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.carte_menu h3,
+.carte_menu p {
   margin: 0;
 }
 
-.carte_menu .prix {
-  padding: 5px;
+.carte_menu .checkbox {
+  display: none;
+  width: 0%;
+  height: 100%;
+  background-color: #99E2D0;
+  padding: 21px 25px;
+  border-radius: 0 15px 15px 0;
+}
+
+.carte_menu .checkbox i {
+  font-size: 20px;
+  color: white;
+}
+
+.carte_menu:nth-child(1n+1) {
+  -webkit-animation: fadein 0.5s ease-out;
+          animation: fadein 0.5s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.carte_menu:nth-child(1n+2) {
+  -webkit-animation: fadein 1s ease-out;
+          animation: fadein 1s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.carte_menu:nth-child(1n+3) {
+  -webkit-animation: fadein 1.5s ease-out;
+          animation: fadein 1.5s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.carte_menu:nth-child(1n+4) {
+  -webkit-animation: fadein 2s ease-out;
+          animation: fadein 2s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.carte_menu:nth-child(1n+5) {
+  -webkit-animation: fadein 2.5s ease-out;
+          animation: fadein 2.5s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.carte_menu:nth-child(1n+6) {
+  -webkit-animation: fadein 3s ease-out;
+          animation: fadein 3s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.carte_menu:nth-child(1n+7) {
+  -webkit-animation: fadein 3.5s ease-out;
+          animation: fadein 3.5s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.carte_menu:nth-child(1n+8) {
+  -webkit-animation: fadein 4s ease-out;
+          animation: fadein 4s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.carte_menu:nth-child(1n+9) {
+  -webkit-animation: fadein 4.5s ease-out;
+          animation: fadein 4.5s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes slideleft {
+  0% {
+    width: 0%;
+    display: none;
+  }
+  1% {
+    display: block;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    width: 0%;
+    display: none;
+  }
+  1% {
+    display: block;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 button {
