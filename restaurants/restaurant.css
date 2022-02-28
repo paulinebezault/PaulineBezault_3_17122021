@@ -96,8 +96,12 @@ h2 {
   width: 100%;
 }
 
-.carte_menu .carte_menu-texte, .carte_menu .prix {
+.carte_menu .carte_menu-texte {
   padding: 10px 20px;
+}
+
+.carte_menu .prix {
+  padding: 25px 20px 5px 20px;
 }
 
 .carte_menu:hover .carte_menu-texte {

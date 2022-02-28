@@ -87,8 +87,11 @@ background-color:#99E2D0}
     font-weight: bold;
     justify-content: space-between;
     width: 100%;
-    .carte_menu-texte, .prix{
+    .carte_menu-texte{
         padding: 10px 20px;
+    }
+    .prix{
+        padding: 25px 20px 5px 20px;
     }
     &:hover {
         .carte_menu-texte {
