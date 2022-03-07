@@ -36,7 +36,7 @@ button {
     }
 }
 h1 {
-    @include titres__id-graph
+    @include titres__id-graph;
 }
 footer {
     background-color: #535353;

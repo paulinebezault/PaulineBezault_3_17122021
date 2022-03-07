@@ -37,9 +37,9 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .box_menu .restaurant-titre h1 {
@@ -56,6 +56,26 @@ main {
   margin: 0;
   padding: 20px;
   width: 100%;
+}
+
+.coeur {
+  position: relative;
+}
+
+.coeur img {
+  width: 28px;
+}
+
+.coeur .heart-solid {
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+}
+
+.coeur:hover .heart-solid {
+  opacity: 1;
 }
 
 h2 {
@@ -135,7 +155,8 @@ h2 {
   font-weight: normal;
 }
 
-.carte_menu .carte_menu-texte h3, .carte_menu .carte_menu-texte p {
+.carte_menu .carte_menu-texte h3,
+.carte_menu .carte_menu-texte p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

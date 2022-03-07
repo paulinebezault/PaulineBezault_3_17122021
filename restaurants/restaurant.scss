@@ -36,7 +36,7 @@ main {
         background-color: #f6f6f6;
         border-radius: 40px 40px 0 0;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
 
         h1 {
             margin: 0;
@@ -56,18 +56,43 @@ main {
     }
 
 }
+.coeur {
+    position: relative;
+
+    img {
+        width: 28px;
+
+    }
+
+    .heart-solid {
+        position: absolute;
+        left: 0px;
+        opacity: 0;
+        transition: opacity 2s;
+    }
+
+    &:hover {
+        .heart-solid {
+            opacity: 1;
+
+        }
+        
+    }
+}
 
 h2 {
     font-size: medium;
     font-weight: normal;
-    margin-bottom:5px;
-    
+    margin-bottom: 5px;
+
 }
-.sub-line{
-    display:block;
-    height:3px;
-width:40px;
-background-color:#99E2D0}
+
+.sub-line {
+    display: block;
+    height: 3px;
+    width: 40px;
+    background-color: #99E2D0
+}
 
 .menu_part {
     padding-bottom: 30px;
@@ -87,22 +112,26 @@ background-color:#99E2D0}
     font-weight: bold;
     justify-content: space-between;
     width: 100%;
-    .carte_menu-texte{
+
+    .carte_menu-texte {
         padding: 10px 20px;
     }
-    .prix{
+
+    .prix {
         padding: 25px 20px 5px 20px;
     }
+
     &:hover {
         .carte_menu-texte {
             width: 60%;
         }
 
         .checkbox {
-            display:block;
+            display: block;
             animation: slideleft 0.3s ease-out;
             animation-fill-mode: forwards;
-            .fa-check-circle{
+
+            .fa-check-circle {
                 animation: rotate 1.5s ease;
                 animation-fill-mode: forwards;
             }
@@ -116,16 +145,18 @@ background-color:#99E2D0}
         p {
             font-weight: normal;
         }
-        h3, p{
+
+        h3,
+        p {
             overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
 
     h3,
     p {
-        margin: 0;    
+        margin: 0;
     }
 
     .checkbox {
@@ -135,9 +166,10 @@ background-color:#99E2D0}
         background-color: #99E2D0;
         padding: 21px 25px;
         border-radius: 0 15px 15px 0;
+
         i {
-         font-size:20px;
-        color:white;
+            font-size: 20px;
+            color: white;
         }
     }
 }
@@ -172,22 +204,24 @@ background-color:#99E2D0}
     }
 
     1% {
-        display:block;
+        display: block;
     }
 
     100% {
-        width:20%;
+        width: 20%;
     }
 }
 
-@keyframes rotate{
-    0%{
-        transform:rotate(0deg);
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
     }
-    100%{
-        transform:rotate(360deg);
+
+    100% {
+        transform: rotate(360deg);
     }
 }
+
 
 button {
     display: flex;

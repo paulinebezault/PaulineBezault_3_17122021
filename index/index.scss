@@ -5,6 +5,7 @@ couleurs: primaire: #9356DC
         secondaire: #FF79DA
         tertiaire: #99E2D0 */
 @import url(../commons/commons.scss);
+@import url(../commons/commons.css);
 $primary: #9356DC;
 $secondary:#FF79DC;
 $tertiary:#99E2D0;
@@ -117,6 +118,13 @@ a {
         box-shadow: 0 5px 10px lightgrey;
         font-weight: bold;
 
+        i {
+                align-items: center;
+                color: grey;
+                margin: auto 30px;
+                width: 15px;
+        }
+
         &:hover {
                 background-color: #f5edff;
                 box-shadow: 5px 5px 10px grey;
@@ -138,12 +146,7 @@ a {
                 left: -10px;
         }
 
-        i {
-                align-items: center;
-                color: grey;
-                margin: auto 30px;
-                width: 15px;
-                }
+
 
         p:nth-child(3) {
                 overflow: hidden;
@@ -171,7 +174,8 @@ a {
         background-color: white;
         border-radius: 20px;
         box-shadow: 0 3px 10px rgb(202, 202, 202);
- overflow:hidden;
+        overflow: hidden;
+
         .carte-image {
                 width: 100%;
                 object-fit: cover;
@@ -202,9 +206,32 @@ a {
                 h3,
                 p {
                         margin: 0;
-                        padding:2px 0 0 0;
-                       
+                        padding: 2px 0 0 0;
+
                 }
         }
 
+}
+
+.coeur {
+        position: relative;
+
+        img {
+                width: 40px;
+
+        }
+
+        .heart-solid {
+                position: absolute;
+                bottom: 0px;
+                opacity: 0;
+                transition: opacity 2s;
+        }
+
+        &:hover {
+                .heart-solid {
+                        opacity: 1;
+
+                }
+        }
 }
