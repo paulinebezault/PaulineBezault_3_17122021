@@ -64,4 +64,24 @@ footer a {
   color: white;
   text-decoration: none;
 }
+
+.coeur {
+  position: relative;
+}
+
+.coeur img {
+  width: 40px;
+}
+
+.coeur .heart-solid {
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+}
+
+.coeur:hover .heart-solid {
+  opacity: 1;
+}
 /*# sourceMappingURL=commons.css.map */

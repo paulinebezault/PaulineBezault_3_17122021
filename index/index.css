@@ -4,6 +4,8 @@ texte: {font-family: 'Roboto', sans-serif;}
 couleurs: primaire: #9356DC
         secondaire: #FF79DA
         tertiaire: #99E2D0 */
+@import url(../commons/commons.scss);
+@import url(../commons/commons.css);
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,12 +26,6 @@ body {
 header {
   margin: auto;
   padding-top: 15px;
-}
-
-header h1 {
-  font-family: 'Shrikhand', cursive;
-  font-weight: normal;
-  font-size: medium;
 }
 
 header img {
@@ -57,7 +53,7 @@ a {
 .explorer .location {
   background-color: #eaeaea;
   min-height: 40px;
-  padding: 20px 0 0 0;
+  padding: 20px 0;
   margin: 0;
   font-weight: bold;
   -webkit-box-shadow: inset 0px 8px 6px -6px #cfcfcf;
@@ -88,27 +84,6 @@ a {
   padding: 0 15px 25px 10px;
   margin: auto;
   color: grey;
-}
-
-button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DC), to(#9356DC));
-  background: linear-gradient(#FF79DC, #9356DC);
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  padding: 20px;
-  border-radius: 40px;
-  border: none;
-  -webkit-box-shadow: 1px 5px 5px lightgrey;
-          box-shadow: 1px 5px 5px lightgrey;
-  margin: auto;
-}
-
-button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff93e3), to(#a16be0));
-  background: linear-gradient(#ff93e3, #a16be0);
-  -webkit-box-shadow: 1px 5px 5px grey;
-          box-shadow: 1px 5px 5px grey;
 }
 
 .fonctionnement {
@@ -142,6 +117,15 @@ button:hover {
   font-weight: bold;
 }
 
+.chips i {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: grey;
+  margin: auto 30px;
+  width: 15px;
+}
+
 .chips:hover {
   background-color: #f5edff;
   -webkit-box-shadow: 5px 5px 10px grey;
@@ -154,23 +138,17 @@ button:hover {
 
 .chips p:first-child {
   background-color: #9356DC;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
+  width: 25px;
+  height: 25px;
+  padding: 4px 5px 6px 5px;
   border-radius: 40px;
   text-align: center;
   color: white;
   position: absolute;
   left: -10px;
-}
-
-.chips i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: grey;
-  margin: auto 30px;
-  width: 15px;
 }
 
 .chips p:nth-child(3) {
@@ -242,26 +220,11 @@ button:hover {
   padding: 2px 0 0 0;
 }
 
-footer {
-  background-color: #535353;
-  color: white;
-  position: relative;
-  bottom: 0;
-  padding-left: 30px;
+.coeur img {
+  width: 25px;
 }
 
-footer h1 {
-  font-family: 'Shrikhand', cursive;
-  font-weight: normal;
-  font-size: medium;
-}
-
-footer nav i {
-  margin-right: 10px;
-  width: 15px;
-}
-
-footer a {
-  color: white;
+.coeur:active .heart-solid {
+  opacity: 1;
 }
 /*# sourceMappingURL=index.css.map */
