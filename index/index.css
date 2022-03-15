@@ -300,4 +300,59 @@ a {
 .coeur:active .heart-solid {
   opacity: 1;
 }
+
+@media screen and (min-width: 820px) {
+  .loader {
+    left: 50% !important;
+  }
+  .main {
+    position: absolute;
+  }
+  .explorer {
+    position: absolute;
+    width: 50%;
+    background-color: transparent;
+    z-index: 0;
+  }
+  .explorer p {
+    border-radius: 0 100px 100px 0;
+  }
+  .fonctionnement {
+    position: relative;
+    width: 50%;
+    margin: 0;
+    left: 50%;
+    top: -20px;
+  }
+  .fonctionnement h2 {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #f6f6f6;
+    padding: 15px 50px 15px 50px;
+    position: relative;
+    left: -5%;
+    width: 105%;
+    z-index: -1;
+  }
+  .all-cartes-resto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .all-cartes-resto .carte-restaurant {
+    min-width: 40%;
+    max-width: 40%;
+    margin: 20px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

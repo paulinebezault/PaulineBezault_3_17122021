@@ -84,14 +84,4 @@ footer a {
 .coeur:hover .heart-solid {
   opacity: 1;
 }
-
-@media screen and (min-width: 820px) {
-  body {
-    max-width: 500px !important;
-    margin: auto !important;
-  }
-  .loader {
-    left: 50% !important;
-  }
-}
 /*# sourceMappingURL=commons.css.map */
