@@ -354,5 +354,8 @@ a {
     max-width: 40%;
     margin: 20px;
   }
+  .restaurants h2 {
+    width: 83%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
