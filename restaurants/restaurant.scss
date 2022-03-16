@@ -232,3 +232,23 @@ button {
     padding-right: 50px;
 }
 
+@media screen and (min-width: 820px){
+    main{
+        height:1200px;
+    }
+    .image-top{
+        left:50%;
+        width:50%;
+        
+        img{
+            height:350%;
+            z-index:-1;
+        }
+
+    }
+    .box_menu{
+        width:50%;
+        bottom: 240px;
+        z-index:0;
+    }
+}
