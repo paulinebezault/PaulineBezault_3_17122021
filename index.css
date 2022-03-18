@@ -4,8 +4,8 @@ texte: {font-family: 'Roboto', sans-serif;}
 couleurs: primaire: #9356DC
         secondaire: #FF79DA
         tertiaire: #99E2D0 */
-@import url(../commons/commons.scss);
-@import url(../commons/commons.css);
+@import url(./commons/commons.scss);
+@import url(./commons/commons.css);
 body {
   display: -webkit-box;
   display: -ms-flexbox;
