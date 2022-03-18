@@ -38,7 +38,7 @@ main {
         justify-content: space-between;
         align-items: center;
 
-        h1 {
+        h2 {
             margin: 0;
             font-size: 1.6em;
         }
@@ -80,7 +80,7 @@ main {
     }
 }
 
-h2 {
+h3 {
     font-size: medium;
     font-weight: normal;
     margin-bottom: 5px;
@@ -146,7 +146,7 @@ h2 {
             font-weight: normal;
         }
 
-        h3,
+        h4,
         p {
             overflow: hidden;
             text-overflow: ellipsis;
@@ -154,7 +154,7 @@ h2 {
         }
     }
 
-    h3,
+    h4,
     p {
         margin: 0;
     }
@@ -234,7 +234,8 @@ button {
 
 @media screen and (min-width: 820px){
     main{
-        height:1200px;
+        height:1300px;
+        
     }
     .image-top{
         left:50%;

@@ -42,7 +42,7 @@ main {
           align-items: center;
 }
 
-.box_menu .restaurant-titre h1 {
+.box_menu .restaurant-titre h2 {
   margin: 0;
   font-size: 1.6em;
 }
@@ -78,7 +78,7 @@ main {
   opacity: 1;
 }
 
-h2 {
+h3 {
   font-size: medium;
   font-weight: normal;
   margin-bottom: 5px;
@@ -155,14 +155,14 @@ h2 {
   font-weight: normal;
 }
 
-.carte_menu .carte_menu-texte h3,
+.carte_menu .carte_menu-texte h4,
 .carte_menu .carte_menu-texte p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.carte_menu h3,
+.carte_menu h4,
 .carte_menu p {
   margin: 0;
 }
@@ -339,7 +339,7 @@ button {
 
 @media screen and (min-width: 820px) {
   main {
-    height: 1200px;
+    height: 1300px;
   }
   .image-top {
     left: 50%;
