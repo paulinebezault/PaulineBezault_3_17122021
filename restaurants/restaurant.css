@@ -130,8 +130,8 @@ h3 {
 
 .carte_menu:hover .checkbox {
   display: block;
-  -webkit-animation: slideleft 0.3s ease-out;
-          animation: slideleft 0.3s ease-out;
+  -webkit-animation: slideleft 0.2s ease-out;
+          animation: slideleft 0.2s ease-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -280,8 +280,8 @@ h3 {
     display: none;
   }
   1% {
-    display: none;
-    width: 0%;
+    width: 1%;
+    display: block;
   }
   100% {
     width: 20%;
@@ -294,8 +294,8 @@ h3 {
     display: none;
   }
   1% {
-    display: none;
-    width: 0%;
+    width: 1%;
+    display: block;
   }
   100% {
     width: 20%;
