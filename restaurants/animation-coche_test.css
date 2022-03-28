@@ -129,11 +129,8 @@ h3 {
 }
 
 .carte_menu:hover .checkbox {
+  right: 0;
   display: block;
-  -webkit-animation: slideleft 0.3s ease-out;
-          animation: slideleft 0.3s ease-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .carte_menu:hover .checkbox .fa-check-circle {
@@ -174,6 +171,10 @@ h3 {
   background-color: #99E2D0;
   padding: 21px 25px;
   border-radius: 0 15px 15px 0;
+  position: absolute;
+  right: -100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .carte_menu .checkbox i {
@@ -274,34 +275,6 @@ h3 {
   }
 }
 
-@-webkit-keyframes slideleft {
-  0% {
-    width: 0%;
-    display: none;
-  }
-  1% {
-    display: none;
-    width: 0%;
-  }
-  100% {
-    width: 20%;
-  }
-}
-
-@keyframes slideleft {
-  0% {
-    width: 0%;
-    display: none;
-  }
-  1% {
-    display: none;
-    width: 0%;
-  }
-  100% {
-    width: 20%;
-  }
-}
-
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
@@ -338,35 +311,4 @@ button {
   padding-left: 50px;
   padding-right: 50px;
 }
-
-@media screen and (min-width: 820px) {
-  .box_menu article {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
-  .menu-all {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .menu-all .menu_part {
-    width: 50%;
-  }
-  .menu-all .carte_menu {
-    width: 80%;
-  }
-}
-/*# sourceMappingURL=restaurant.css.map */
+/*# sourceMappingURL=animation-coche_test.css.map */

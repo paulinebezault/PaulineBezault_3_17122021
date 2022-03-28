@@ -231,34 +231,41 @@ a {
   .loader {
     left: 50% !important;
   }
-  .main {
-    position: absolute;
-  }
-  .explorer {
-    position: absolute;
-    width: 50%;
-    background-color: transparent;
-    z-index: 0;
-  }
-  .explorer p {
-    border-radius: 0 100px 100px 0;
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .fonctionnement {
-    position: relative;
-    width: 50%;
-    margin: 0;
-    left: 50%;
-    top: -20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .fonctionnement h2 {
     text-align: center;
-    font-size: 1.5em;
-    background-color: #f6f6f6;
-    padding: 15px 50px 15px 50px;
-    position: relative;
-    left: -5%;
-    width: 105%;
-    z-index: -1;
+  }
+  .fonctionnement .all-chips {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .fonctionnement .all-chips .chips {
+    width: 30%;
   }
   .all-cartes-resto {
     display: -webkit-box;

@@ -126,14 +126,13 @@ h3 {
         .carte_menu-texte {
             width: 60%;
         }
-
+        
         .checkbox {
-            display: block;
-            animation: slideleft 0.3s ease-out;
-            animation-fill-mode: forwards;
+            right: 0;
+            display:block;
 
             .fa-check-circle {
-                animation: rotate 1.5s ease;
+                animation:  rotate 1.5s ease;
                 animation-fill-mode: forwards;
             }
         }
@@ -167,6 +166,9 @@ h3 {
         background-color: #99E2D0;
         padding: 21px 25px;
         border-radius: 0 15px 15px 0;
+        position: absolute;
+  right: -100%;
+  transition: all .5s;
 
         i {
             font-size: 20px;
@@ -198,24 +200,7 @@ h3 {
     }
 }
 
-@keyframes slideleft {
-    0% {
-        width: 0%;
-        display: none;
 
-    }
-
-    1% {
-        display: none;
-        width: 0%;
-    }
-
-
-    100% {
-        width: 20%;
-
-    }
-}
 
 @keyframes rotate {
     0% {
@@ -237,28 +222,4 @@ button {
     padding-right: 50px;
 }
 
-@media screen and (min-width: 820px) {
-
-    .box_menu {
-        article {
-            display: flex;
-            flex-direction: column;
-            width:100%;
-        }
-    }
-
-    .menu-all {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content:space-around;
-        .menu_part {
-            width: 50%;
-        }
-        .carte_menu{
-            width:80%;
-        }
-    }
-
-        
-    }
+@media screen and (min-width: 820px) {}
